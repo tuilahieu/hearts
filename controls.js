@@ -22,18 +22,13 @@ var settings = {
 
 // open setting
 
-window.onkeyup = (e) => {
-  if (e.key === "h") {
-    document.querySelector(".customer").classList.toggle("hide");
-  }
-};
-
 const colorHeart = document.querySelector("#color-heart");
 const colorText = document.querySelector("#color-text");
 const fontText = document.querySelector("#font-text");
 const contentText = document.querySelector("#content-text");
 
 function setting() {
+  document.querySelector(".customer").classList.add("hide");
   settings.particles.color = colorHeart.value || "#fff";
   settings.particles.textFill = contentText.value || "iu cậu <3";
   settings.particles.textSize = +fontText.value || "32";
